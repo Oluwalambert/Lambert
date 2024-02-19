@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    button, select {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+</style>
+<body>
+    <table>
+        <form action="">
+        <tr>
+            <th colspan="6">FILL THE FORM BELOW</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td colspan="2"><input type="text" placeholder="First name"></td>
+            <td colspan="3"><input type="text" placeholder="Other Names"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td colspan="5"><input type="number" ></td>
+        </tr>
+        <tr>
+           <td>E:mail:</td>
+           <td colspan="5"><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td colspan="5"><input type="password"></td>
+        </tr>
+        <tr>
+           <td colspan="3"> 
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Fav Color:</td>
+            <td><input type="checkbox">Red</td>
+            <td><input type="checkbox">Green</td>
+            <td><input type="checkbox">Blue</td>
+            <td><input type="checkbox">Yellow</td>
+            <td><input type="checkbox">Pink</td>
+        </tr>
+        <tr>
+            <td>Course:</td>
+            <td><input type="checkbox" name="Course" id="Web Development">Web Development</td>
+            <td><input type="checkbox" name="Course" id="UI/UX">UI/UX</td>
+            <td><input type="checkbox" name="Course" id="Data Analysis">Data Ananlysis</td>
+            <td><input type="checkbox" name="Course" id="Python">Python</td>
+            <td><input type="checkbox" name="Course" id="Animation">Animation</td> 
+        </tr>
+        <tr>
+        <td colspan="2"></td>
+        <td colspan="2"><button type="reset" onclick="alert('YOU ARE ABOUT TO RESET THIS FORM')"> RESET</button></td>
+        <td colspan="2"><button type="submit" onclick="alert('YOU ARE ABOUT TO SUBMIT THIS FORM')">SUBMIT</button></td>
+       </tr>
+     </form>
+      </table>
+</body>
+</html>
